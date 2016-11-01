@@ -65,7 +65,6 @@ public class RedisRegistry extends FailbackRegistry {
 
         String[] addrs = address.split(",");
         for (String addr : addrs) {
-            System.out.println("ADDR: " + addr);
             URI uri = URI.create(addr);
             String host = uri.getHost();
             int port = uri.getPort();
